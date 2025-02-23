@@ -1,0 +1,310 @@
+
+ 
+
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Landing page section */
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+    margin-top: 90px;
+    animation: fadeInPage 1.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInPage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Image fade-in and zoom effect */
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1.5s ease-out forwards;
+    margin-left: 30px;
+    box-shadow: 0 0 100px #0e85c0;;
+  }
+  
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Text fade-in from bottom */
+  .text-container {
+    flex: 1;
+  margin-left: 80px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInFromBottom 1s ease-out forwards;
+    
+  }
+  
+  @keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button hover effect */
+  .cta-button {
+    background-color: #0e85c0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-5px); /* Button lifts up */
+    background-color: #2299ee; /* Darker green */
+  }
+  /*for smaller tablets and mobile devices*/
+  @media (max-width: 768px){
+    .landing-page{
+      flex-direction: column;
+      margin-top: 6rem;
+      padding: 3em;
+    }
+    .profile-image{
+      width: 200px;
+      height: 200px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .text-container{
+      margin-left: 0;
+      text-align: center;
+    }
+    .cta-button{
+      margin-top: 2rem;
+      font-size: 1rem;
+      padding: 8px 18px;
+    }
+  }
+  /* for very small screensa (mobile phonbes*/
+  @media (max-width: 480px){
+    .landing-page{
+      margin-top:6em;
+      padding: 3em;
+      
+    }
+    .profile-image{
+      width: 180px;
+      height: 180px;
+      margin-bottom: 15px;;
+    }
+    .text-container{
+      margin-left: 0;
+      padding: 10px;
+      text-align: center;
+      
+    }
+    
+    .text-container h2{
+      text-decoration: underline;
+      
+    }
+    .cta-button{
+      font-size: 0.95rem;
+      padding: 6px 16px;
+     
+    }
+  }
+  /*before and after*/
+  
+     .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-height: fit-content;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding-bottom: 50px;
+    
+     
+    }
+     .section-heading {
+      text-align: center; /* Center align the heading */
+      font-size: 2rem;    /* Adjust the size as needed */
+      margin-bottom: 20px; /* Add spacing below the heading */
+      color: #333;        /* Choose a color that fits your theme */
+      font-weight: bold;  /* Make the heading stand out */
+      margin-top: 50px;
+    }
+    
+    
+    /* Card Styles */
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
+    .card .tags span {
+      background-color: #f0f4f8;
+      color: #444;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    
+    .card .icon {
+      width: 60px;
+      height: 60px;
+      margin: 10px auto;
+    }
+    
+    .card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    
+    .card p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    /* Audio Controls */
+    .audio-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .audio-controls .play-btn {
+      background-color: #ff5722;
+      color: #fff;
+      border: none;
+    border-radius: 50%;
+    width: 15%;
+    padding: 2px 0px 0px 0px;
+    height: 32px;
+    font-size: 18px;
+      cursor: pointer;
+      
+      
+    }
+    
+    .audio-controls .play-btn:hover {
+      background-color: #e64a19;
+    }
+    
+    .audio-controls .toggle-btn {
+      padding: 5px 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 15px;
+      font-size: 12px;
+      cursor: pointer;
+      background-color: #fff;
+    }
+    
+    .audio-controls .toggle-btn.active {
+      background-color: #ff5722;
+      color: #fff;
+      border-color: #ff5722;
+    }
+    .play-btn {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white; 
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .play-btn:hover {
+      background-color: #0056b3;
+    }
+  
+    @keyframes dance {
+      0% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(10deg) scale(1.2); }
+      50% { transform: rotate(0deg) scale(1); }
+      75% { transform: rotate(-10deg) scale(1.2); }
+      100% { transform: rotate(0deg) scale(1); }
+    }
+  
+    .dancing {
+      animation: dance 0.5s infinite;
+    }
+  
+  @media (max-width: 768px){
+    .section-heading{
+      font-size: 5px;
+    }
+  }
+  @media (max-width: 480px){
+    
+    .section-heading{
+      font-size: 0.8em;
+    }
+    .project-container{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card{
+      padding: 10px;
+      margin: 10px 10px;
+    }
+  }

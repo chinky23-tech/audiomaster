@@ -1,0 +1,209 @@
+
+body {
+    line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   
+}
+ /* About Hero Section */
+ .about-hero {
+   background-color: #eef2f3;
+   color: #030303;
+   text-align: center;
+   padding: 4rem 2rem;
+ }
+ 
+ .about-hero h1 {
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   margin-top: 2rem;
+   padding: 1.8rem;
+ }
+ 
+ .about-hero p {
+   font-size: 1.2rem;
+ }
+ 
+ /* About Content Section */
+ .about-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .about-text {
+   flex: 1;
+   min-width: 300px;
+   margin-right: 2rem;
+ }
+ 
+ .about-text h2 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .about-text p {
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 1rem;
+ }
+ 
+ .about-image {
+   flex: 1;
+   min-width: 300px;
+ }
+ 
+ .about-image img {
+   width: 100%;
+   border-radius: 8px;
+ }
+ 
+ /* Skills Section */
+ .skills {
+   background-color: #fff;
+   padding: 2rem;
+   text-align: center;
+ }
+ 
+ .skills h2 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+ }
+ 
+ .skills-grid {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   flex-wrap: wrap;
+ }
+ 
+ .skill-card {
+   background-color: #f4f4f4;
+   padding: 1.5rem;
+   border-radius: 8px;
+   width: 250px;
+   text-align: center;
+ }
+ 
+ .skill-card i {
+   font-size: 2rem;
+   color: #007bff;
+   margin-bottom: 1rem;
+ }
+ 
+ .skill-card h3 {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .skill-card p {
+   font-size: 1rem;
+ }
+ 
+
+/* Team Section */
+.team {
+   padding: 2rem;
+   text-align: center;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .team h2 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+ }
+ 
+ .team-member {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   background-color: #fff;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .team-member-image {
+   flex: 1;
+ }
+ 
+ .team-member-image img {
+   width: 100%;
+   border-radius: 8px;
+   height: 400px;
+ }
+ 
+ .team-member-quote {
+   flex: 1;
+   text-align: left;
+ }
+ 
+ .team-member-quote blockquote {
+   font-size: 1.5rem;
+   font-style: italic;
+   color: #0b0c0c;
+   margin-bottom: 1rem;
+   display: block;
+   margin-left: 40px;
+   line-height: 1.8;
+   
+ }
+ 
+ .team-member-quote p {
+   font-size: 1rem;
+   color: #333;
+   font-weight: bold;
+   text-align: right;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .team-member {
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .team-member-quote {
+     text-align: center;
+   }
+ }
+ 
+
+ 
+ /* Call-to-Action Section */
+ .about-cta {
+   background-color: #f8f9f9;
+   color: #080808;
+   text-align: center;
+   padding: 2rem;
+  
+ }
+ 
+ .about-cta h2 {
+   font-size: 2rem;
+   margin-bottom: 3rem;
+   
+ }
+ 
+ .cta-button {
+   background: transparent;
+   border: 1px solid #00aaff;
+   color: #030303;
+   padding: 0.75rem 1.5rem;
+   border-radius: 4px;
+   font-size: 1rem;
+   cursor: pointer;
+   text-decoration: none;
+   
+ }
+ 
+ .cta-button:hover {
+   background-color: #f4f4f4;
+ }
+ 
+ 

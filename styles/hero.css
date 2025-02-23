@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: column;
+  overflow-x: hidden; 
+
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+  z-index: 1;
+}
+
+#soundwave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
+}
+
+.hero-content h1 span {
+  color: #00ffaa;
+  animation: textGlow 3s infinite alternate;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cta {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00aaff, #00ffaa);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.cta:hover {
+  background: linear-gradient(45deg, #00ffaa, #00aaff);
+}
+
+/* Animations */
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 15px #00ffaa, 0 0 30px #00ffaa;
+  }
+  100% {
+    text-shadow: 0 0 30px #00ffaa, 0 0 60px #00ffaa;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 400px) {
+  
+  
+  .hero {
+    height: auto;
+    padding: 20px;
+    
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .cta {
+    font-size: 0.9rem; 
+    padding: 12px 25px; 
+  }
+
+  .hero-overlay {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Darker overlay for better contrast */
+  }
+/*
+  #soundwave {
+    display: none;  Hide soundwave for smaller screens 
+  }*/
+}

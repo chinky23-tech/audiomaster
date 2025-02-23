@@ -1,0 +1,566 @@
+.featured-section {
+   
+    color: #140f0f;
+    padding: 50px 20px;
+    text-align: center;
+    /*background: linear-gradient( 180deg ,#00aaff,#0d0d0d);*/
+   
+  }
+
+
+  a{
+    text-decoration: none;
+  }
+  
+/* General Styling */
+.show-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 50px;
+  background: linear-gradient(to bottom, #f7f7f7, #eaeaea); /* Light gradient */
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.show-text {
+  display: block;
+  flex: 1;
+  margin-bottom: 20px; /* Add space on smaller screens */
+}
+
+.show-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.show-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #00aaff, #00ffaa);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.whatsapp-button i {
+  margin-right: 10px;
+}
+
+/* Bounce Animation for Button */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Right Side Slideshow */
+.show-slideshow {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slideshow-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 20px;
+}
+
+.slideshow-img.active {
+  opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens larger than 768px (tablets and above) */
+@media (max-width: 768px) {
+  .show-section {
+    flex-direction: column;
+   /* height: auto;  Allow content to stack vertically */
+    padding: 10px; 
+  }
+
+  .show-title {
+    font-size: 1.5rem; 
+    margin-top: 5rem;
+  }
+
+  .show-subtitle {
+    font-size: 1.2rem; 
+  }
+
+  .show-text {
+    margin-bottom: 20px; 
+  }
+
+  .show-slideshow {
+    height: 50%; 
+    
+  }
+}
+
+/* For screens 480px and smaller (mobile devices) */
+@media (max-width: 480px) {
+
+
+  .show-title {
+    font-size: 2rem; 
+  }
+
+  .show-subtitle {
+    font-size: 1.1rem; 
+  }
+
+  .whatsapp-button {
+    padding: 8px 16px; 
+    font-size: 14px; 
+  }
+
+  .show-slideshow {
+    height: 200px; 
+   min-height: 250px;
+  }
+
+  .slideshow-img {
+    object-position: center; 
+  }
+}
+
+
+  
+/* Style for the section mixedbydb image*/
+.mixedbydb {
+  
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the SVG text */
+.cover-image svg {
+  width: 100%;
+  height: 100px;
+  
+  
+}
+.cover-image svg:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* Style for the image */
+.cover-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/*responsive style*/
+@media( max-width: 1280px) {
+  .cover-image svg {
+    height: 80px; 
+   
+  }
+text{
+  font-size: 35px;
+}
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+/* for tablet*/
+@media (max-width: 768px){
+  .cover-image svg {
+    height: 80px; 
+   
+  }
+text{
+  font-size: 25px;
+}
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+/* For mobile devices */
+@media (max-width: 480px) {
+  
+  .cover-image svg {
+    height: 60px; 
+ 
+  }
+text{
+  font-size: 18px;
+}
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mixedbydb {
+    padding: 10px; 
+  }
+}
+
+/* Audio Services Section */
+.audio-services {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.myskill{
+  font-size: 2em;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.serv-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left-cards,
+.right-cards {
+ display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+ 
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.skill-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8p #000000;
+  transition: transform 0.3s ease;
+ 
+  
+}
+.center-card .skill-card { 
+  height: 100%;
+ 
+
+}
+.center-card .skill-card i {
+  margin-top: 50px;
+}
+.center-card .skill-card h3{
+  margin-top: 50px;
+}
+.center-card .skill-card p{
+  margin-top: 50px;
+}
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 15px;
+  
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  color: #000000;
+margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #000000;
+  
+}
+@media(max-width: 1080px){
+  .serv-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+  }
+}
+@media (max-width: 768px) {
+  /* Adjust grid layout for smaller screens */
+  .serv-container {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+  }
+
+  /* Adjust title font size */
+  .myskill {
+    font-size: 1.50em;
+  }
+
+ 
+  .center-card .skill-card i {
+    font-size: 2rem; 
+  }
+
+  .center-card .skill-card h3 {
+    font-size: 1.25rem; 
+  }
+  .center-card .skill-card p {
+    font-size: 0.9rem; 
+  }
+   
+    .left-cards .skill-card i {
+      font-size: 2rem; 
+    }
+  
+    .left-cards .skill-card h3 {
+      font-size: 1.25rem; 
+    }
+    .left-cards .skill-card p {
+      font-size: 0.9rem; 
+    }
+    .right-cards .skill-card i {
+      font-size: 2rem; 
+    }
+  
+    .right-cards .skill-card h3 {
+      font-size: 1.25rem; 
+    }
+    .right-cards .skill-card p {
+      font-size: 0.9rem; 
+    }
+}
+@media (max-width: 480px){
+  .serv-container {
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+  }
+
+  /* Adjust title font size */
+  .myskill {
+    font-size: 1.50em;
+  }
+
+ 
+  .center-card .skill-card i {
+    font-size: 2rem; 
+  }
+
+  .center-card .skill-card h3 {
+    font-size: 1.25rem; 
+  }
+  .center-card .skill-card p {
+    font-size: 0.9rem; 
+  }
+   
+    .left-cards .skill-card i {
+      font-size: 2rem; 
+    }
+  
+    .left-cards .skill-card h3 {
+      font-size: 1.25rem; 
+    }
+    .left-cards .skill-card p {
+      font-size: 0.9rem; 
+    }
+    .right-cards .skill-card i {
+      font-size: 2rem; 
+    }
+  
+    .right-cards .skill-card h3 {
+      font-size: 1.25rem; 
+    }
+    .right-cards .skill-card p {
+      font-size: 0.9rem; 
+    }
+}
+/* Counter Section */
+.counter {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.achievements{
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  max-width: 300px;
+  padding: 15px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+      
+
+
+
+/* Responsive Design */
+
+/* Extra Small (Mobile Portrait) - max-width: 480px */
+@media (max-width: 480px) {
+
+  .achievements {
+    font-size: 1.2em;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+ .row{
+  flex-direction: column;
+  max-width: 200px;
+  margin: 0 auto;
+ }
+
+  
+}
+
+/* Small (Mobile Landscape) - max-width: 767px */
+@media (max-width: 767px) {
+
+
+  .row {
+  /*  flex-direction: column;*/
+
+    gap: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+
+}
+
+/* Medium (Tablets) - max-width: 1023px */
+@media (max-width: 1023px) {
+
+ 
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+}
+
+/* Large (Small Desktop / Laptops) - max-width: 1279px */
+@media (max-width: 1279px) {
+  
+
+ 
+
+  .row {
+    flex-direction: row;
+  }
+
+  .column {
+    max-width: 300px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* Extra Large (Desktop) - 1280px and larger */
+@media (min-width: 1280px) {
+
+
+  .row {
+    flex-direction: row;
+  }
+
+  .column {
+    max-width: 300px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

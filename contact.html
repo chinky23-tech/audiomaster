@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><span class="logo-text">Doctor <span class="dB">dB</span> Studios</span></a>
+        </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+
+
+        </ul>
+          <div class="hamburger" onclick="toggleMenu()" role="button" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+      
+    </nav>
+    <main>
+        <section class="contact-hero">
+          <h1>Get in Touch</h1>
+          <p>We'd love to hear from you! Reach out for collaborations, inquiries, or just to say hello.</p>
+        </section>
+        <section class="contact-form">
+            <h2>I'd Love to Hear From You</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+            <p id="formResponse"></p>
+          </section>
+          <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-envelope"></i> Email: info@doctordbstudios.com</p>
+            <p><i class="fas fa-phone"></i> Phone: +91 99887 07431</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: 123 Studio Lane, Music City, India</p>
+          </section>
+        </main>
+                      
+              <!-- Footer -->
+         
+            
+              <footer class="footer-container">
+                <h2 class="footer-head">Stay Connected</h2>
+               <p class="footer-p">Follow along on social media to see the latest work and behind-the-scenes at DoctordBStudios.</p>
+                <div class="social-links">
+                  <a href="mailto:your-email@example.com" class="contact-link" aria-label="email">Reach Out via Email</a>
+                  <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon" aria-label="instagram">
+                    <i class="fab fa-instagram"></i>
+                    
+                  </a>
+                  <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon" aria-label="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.youtube.com/yourchannel" target="_blank" class="social-icon" aria-label="youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                 
+                </div>
+                <div class="copyright">
+                <p>&copy; 2024 DoctordBStudios. All rights reserved.</p>
+                </div>
+              </footer>
+        
+        
+   <script src="scripts/script.js"></script>
+    <script src="scripts/featured.js"></script>
+    <script src="scripts/contact.js"></script>
+ 
+ </body>
+ </html>
