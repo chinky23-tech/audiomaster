@@ -5,6 +5,7 @@
     font-weight: 300;
   }
  
+  
   .navbar {
     position: fixed;
     top: 0;
@@ -13,21 +14,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background: linear-gradient( 180deg ,#00aaff,#0d0d0d);
+   /* background: linear-gradient( 180deg ,#00aaff,#0d0d0d);*/
+   background-color:  #fbfcfc ;
+    
+
     z-index: 100;
-    color: white;
+    
   
   }
   
   .navbar .logo a {
     height: 50px;
     text-decoration: none;
-    color: white;
+    color: black;
    
   }
 
   .logo-text {
-    color: #ffffff; 
+   color: black;
   }
   
   .logo-text .dB {
@@ -40,7 +44,7 @@
   list-style: none; 
   gap: 35px;
   padding: 0 0.7vw;
-  
+ 
   align-items: center;
  
  
@@ -48,7 +52,8 @@
 .nav-links li a{
   text-decoration: none;
   margin: 0 0.7vw;
-  color: white;
+  /*color: white;*/
+  color: black;
 }
 .nav-links li a:hover {
   color: #61DAFB;
