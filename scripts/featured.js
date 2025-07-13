@@ -12,6 +12,25 @@ hamburger.addEventListener('click', ()=>{
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
 });*/
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', toggleMenu);
+
+hamburger.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleMenu();
+  }
+});
+
+function toggleMenu() {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+}
+
+
+
 
 
 
