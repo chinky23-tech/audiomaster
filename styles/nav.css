@@ -7,15 +7,11 @@
  
   
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
     background-color:  #fbfcfc ;
-    z-index: 100;
+      padding:  20px;
     }
   
   .navbar .logo a {
@@ -48,7 +44,7 @@
   text-decoration: none;
   margin: 0 0.7vw;
 
-  color:  #17202a ;
+  color:  black;
 }
 .nav-links li a:hover {
   color:  #17202a ;
@@ -102,31 +98,27 @@
 
 
 
+
+
 /* Responsive Design */
   @media (max-width: 768px) {
   
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      right: 30px;
-      background: rgba(13, 13, 13, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      width: 50%;
-     
-     
-    }
+  .nav-links{
+            position: fixed;
+        top:34px;
+        border-top: 2px solid var(--hot-pink);
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 40px 0;
+        gap: 30px;
+        transition: left 0.5s ease;
+  }
    
-    .nav-links.active {
-        display: flex;
-      }
-    
-      .hamburger {
-        display: flex;
-      }
+
       
     }
     
