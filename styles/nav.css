@@ -12,6 +12,7 @@
   align-items: center;
   background-color: #fbfcfc;
   padding: 20px;
+  color: red;
   position: relative;
   z-index: 1000;
 }
